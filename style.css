@@ -52,6 +52,7 @@ header {
 .btn-Reserve {
   padding: 10px 20px;
   background: #fb911f;
+  border-radius: 5px;
   margin-top: -10px;
   text-transform: uppercase;
 }
@@ -64,4 +65,59 @@ header {
 header .navbar li a:hover {
   color: #fb911f;
   border-bottom: 2px solid #fb911f;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/pageheader-banner.jpg);
+  background-size: contain;
+}
+
+.banner .container {
+  max-width: 70%;
+  text-align: center;
+}
+.banner .container h2 {
+  color: #fff;
+  font-size: 3em;
+  text-decoration: capitalize;
+}
+.container p:nth-child(2) {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.btn1 {
+  font-size: 1em;
+  color: #fff;
+  background: #fb911f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn2 {
+  font-size: 1em;
+  color: #fff;
+  background: #2a4963;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
 }
