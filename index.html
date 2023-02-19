@@ -14,54 +14,46 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo"><span>Re</span>sto<span> D'</span>art</a>
-      <ul class="navbar">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Expert</a></li>
-        <li><a href="#">Temoignage</a></li>
-        <li><a href="#">Contact</a></li>
-        <a href="#" class="btn-Reserve">Reservation</a>
-      </ul>
-    </header>
-    <section class="banner" id="banner">
-      <div class="container">
-        <h2>Que des plats Délicieux</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, soluta
-          placeat. Expedita aut iusto suscipit unde eum? Totam, sit sapiente
-          velit laborum necessitatibus doloremque, laudantium natus ratione,
-          magni adipisci expedita.
-        </p>
+     <a href="#" class="logo"><span>Re</span>sto<span> d'</span>art</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banner" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+        <li><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+    </ul>
+</header>
+<section class="banner" id="banner">
+    <div class="container">
+        <h2>Que Des Plats Délicieux</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <a href="#" class="btn1">Notre Menu</a>
         <a href="#" class="btn2">Reservation</a>
-      </div>
-    </section>
-    <section class="apropos" id="apropos">
-      <div class="row">
+    </div>
+</section>
+<section class="apropos" id="apropos">
+    <div class="row">
         <div class="col50">
-          <h2 class="title-text"><span>A</span> propos De Nous</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            natus quos id veritatis hic nihil nobis et dolore nemo, corporis
-            quasi modi ullam ratione sit facere numquam eaque, suscipit autem?
-          </p>
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
         </div>
         <div class="col50">
-          <div class="img">
-            <img src="./images/plat3.jpg" alt="image" />
-          </div>
+            <div class="img">
+                <img src="./images/plat3.jpg" alt="image">
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="menu" id="menu">
-      <div class="title">
-        <h2 class="title-text"><span>M</span>enu</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          natus quos id veritatis hic nihil nobis et dolore nemo, corporis quasi.
-        </p>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>M</span>enu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
     </div>
     <div class="container">
         <div class="box">
@@ -135,8 +127,8 @@
  </div>
 </section>
 <section class="expert" id="expert">
-    <div class="title">
-        <h2 class="title-text">Nos <span>E</span>xperts</h2>
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>E</span>xperts</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
     </div>
     <div class="container">
@@ -210,5 +202,42 @@
         </div>
     </div>
  </section>
-  </body>
+ <section class="contact" id="contact">
+     <div class="black title">
+         <h2 class="title-text"><span>C</span>ontact</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+     </div>
+     <div class="contactform">
+         <h3>Envoyer un message</h3>
+         <div class="inputbox">
+             <input type="text" placeholder="Nom">
+         </div>
+         <div class="inputbox">
+            <input type="text" placeholder="email">
+         </div>
+         <div class="inputbox">
+            <textarea placeholder="message"></textarea>
+         </div>
+         <div class="inputbox">
+             <input type="submit" value="envoyer">
+         </div>
+     </div>
+ </section>
+ <div class="copyright">
+     <p>copyright 2023 <a href="#">Faridb-Dev </a>⎪ Tous droits reservé.</p>
+ </div>
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     function toggleMenu(){
+         const tmenuToggle = document.querySelector('.menuToggle');
+         const navbar = document.querySelector('.navbar');
+         navbar.classList.toggle('active');
+         menuToggle.classList.toggle('active');
+     }
+ </script>
+</body>
 </html>
